@@ -12,7 +12,7 @@
 		<tr>
 			<td nowrap width="437"></td>
 			<td>
-				<img id="img" src="${pageContext.request.contextPath}/authImage" /><br/>
+				<img id="img" src="authImage" /><br/>
 				<input type="text" name="verifyCode" id="verifyCode" />
 				<button id="submit">submit</button>
 			</td>
@@ -24,7 +24,7 @@
 	<script type="text/javascript">
 		window.onload = function() {
 			$('#img').on('click', function() {
-				this.src = "${pageContext.request.contextPath}/authImage?date=" + new Date();
+				this.src = "authImage?date=" + new Date();
 			});
 			$('#submit').on('click', function() {
 				var code = $('#verifyCode')[0].value;
@@ -34,7 +34,7 @@
 				}
 				$.ajax({
 					type : 'POST',
-					url : "${pageContext.request.contextPath}/verify",
+					url : "verify",
 					data : {
 						verifyCode : code 
 					},
