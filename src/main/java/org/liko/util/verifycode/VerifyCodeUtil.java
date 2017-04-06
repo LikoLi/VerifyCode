@@ -16,7 +16,6 @@ import java.util.Random;
 
 import javax.imageio.ImageIO;
 
-//http://www.cnblogs.com/jianlun/articles/5553452.html
 public class VerifyCodeUtil {
 
 	// 验证码中会出现的字符, 去掉容易混淆的字符.
