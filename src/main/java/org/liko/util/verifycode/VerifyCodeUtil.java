@@ -1,4 +1,4 @@
-package org.liko.verifycode;
+package org.liko.util.verifycode;
 
 import java.awt.Color;
 import java.awt.Font;
